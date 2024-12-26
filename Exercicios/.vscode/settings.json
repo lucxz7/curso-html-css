@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": "cascadia code",
+    "editor.fontLigatures": true,
+    "files.autoSave": "onWindowChange",
+    "editor.fontSize": 16,
+    "glassit.alpha": 245,
+    "glassit.force_sway": false,
+    "glassit.step": 5
+}
