@@ -21,7 +21,7 @@ header h1{
     color: aliceblue;
     text-align: center;
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 header p{
@@ -41,10 +41,11 @@ a:hover{
 section{
  padding-top: 10vh;
 padding-left: 30px;
-line-height: 30px;
+line-height: 2em;
 font-style: italic;
 font-weight: 200;
 padding-bottom: 10vh;
+font-size: 2.5vw;
 
 
 }
@@ -61,7 +62,8 @@ section.imagem{
 }
 .imagem p{
     background-color: rgba(0, 0, 0, 0.205);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 section#imagens{
