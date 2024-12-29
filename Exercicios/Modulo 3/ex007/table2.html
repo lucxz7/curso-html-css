@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody tr:nth-child(even){ /* 2n */
+            background-color: aqua;
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        thead{
+            background-color: rgb(128, 128, 128);
+            color: aliceblue;
+            background-attachment: fixed;
+        }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Tabelas grandes</h1>
+    <table>
+        <caption>populaçao das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>São Paulo</td>
+            <td>45 919 049</td>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>2 164 781</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+            <tr><td></td>
+                <td class="num"></td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
