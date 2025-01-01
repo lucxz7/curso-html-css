@@ -10,8 +10,34 @@ initial-scale=1.0">
 <body>
     <h1>Input</h1>
     <form action="cadastro.php" 
-method="get" autocomplete="on">
-
+method="post" autocomplete="on">
+    <p>
+        <label for="ies">Estado</label>
+        <select name="ies" id="ies">
+            <option value="escolha" selected hidden>--Escolha--</option >
+            <optgroup label="Região Sudeste">
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Mg">Minas Gerais</option>
+                <option value="Sp">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="Rs">Rio grande do Sul</option>
+                <option value="pn">Parana</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="pro">Profissão</label>
+            <input type="text" name="pro" id="pro" list="ldlist">
+            <datalist id="ldlist">
+                <option value="ADM">Administrador</option>
+                <option value="PRG">Programador</option>
+            </datalist>
+        </p>
+    </p>
+<p>
+    <label for="imsg">Mensagem</label>
+    <textarea name="imsg" id="img" cols="30" rows="10"></textarea>
+</p>
 
 
 <p>
