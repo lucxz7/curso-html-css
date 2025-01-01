@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>texte de formulario</h1>
+<form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="inome" id="inome" required maxlength="40" placeholder="Nome Complete" autocomplete="name">
+    </p>
+    <p>
+        <label for="imedia">Media:</label>
+        <input type="number" name="imedia" id="imedia" min="0" max="10" placeholder="0 - 10" step="0.1" required value="5">
+    </p>
+    <p>
+        <label for="icalendar">Periodo letivo:</label>
+        <input type="month" name="icalendar" id="icalendar" value="2024-12">
+    </p>
+    <p><input type="submit" name="" id="">
+    <input type="reset" value="resetar"></p>
+</form>
+</body>
+</html>
