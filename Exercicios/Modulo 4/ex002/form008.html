@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width, 
+initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        }
+    </style>
+</head>
+<body>
+    <h1>Input</h1>
+    <form action="cadastro.php" 
+method="post" autocomplete="on">
+<p>
+    <label for="ino">Numero 1</label>
+    <input type="number" name="ino" id="ino" required min="0" max="1000" oninput="isoma.innerHTML = Number(ino.value) + Number(inu.value)">
+</p>
+
+<p>
+    <label for="inu">Numero 2</label>
+    <input type="number" name="inu" id="inu" required min="0" max="10"oninput="isoma.innerHTML = Number(ino.value) + Number(inu.value)">
+</p>
+
+<p>
+    <label for="isoma">Soma</label>
+    <output id="isoma">0</output>
+</p>
+<p>
+    <label for="iano">Em que Ano você nasceu?</label>
+    <input type="number" name="iano" id="iano" min="1900" max="2024" required oninput="idade()">
+</p>
+<p> <label for="out">Sua idade é</label>
+    <output id="out">0</output>
+</p>
+<p>
+
+    
+
+    <input type="submit"
+value="Enviar">
+    <input type="reset" 
+value="Resetar">
+</p>
+</form>
+<script>
+    function idade() {
+        let ano = new Date().getFullYear()
+        out.innerHTML = Number(ano) - Number(iano.value) 
+    }
+</script>
+</body>
+</html>
