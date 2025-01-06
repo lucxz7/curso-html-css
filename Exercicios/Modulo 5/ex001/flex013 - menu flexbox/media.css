@@ -1,3 +1,13 @@
-@media screen and () {
+@charset "UTF-8";
+
+
+header{
+    flex-flow: column ;
+}
+
+nav{
+    flex-flow: column nowrap;
+    transition: 500ms;
+
     
 }
