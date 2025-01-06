@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        .item{
+            background-color: blueviolet;
+            border: 1px solid ;
+            text-align: center;
+            flex-basis: 20px;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+        }
+
+        #i1{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #i2{
+flex-shrink: 1;
+flex-grow: 2;
+        }
+        #i3{
+flex-shrink: 2;
+flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+</body>
+</html>
